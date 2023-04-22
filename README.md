@@ -1,1 +1,18 @@
-# Drowsiness
+Nowadays Driver fatigue is a major factor in a large number of vehicle accidents. Recent statistics estimate that annually 1,200 deaths and 76,000 injuries can be attributed to fatigue related crashes. The development of technologies for detecting and avoiding drowsiness at the wheel is a major challenge in the field of accident -avoidance systems. Because of the hazard that drowsiness presents on the road, methods need to be developed for counteracting its affects. Drowsiness detection is a safety technology that can prevent accidents that are caused by drivers who fell asleep while driving. Not only limited to the drivers, this system can also be used by watchmen as they fall asleep and various mishap takes place. Students while studying, often fall asleep this system will help them stay alert and focus on their studies.
+
+The system will detect the early symptoms of drowsiness before the user has fully lost all attentiveness and warn the user that they are no longer capable of operating the vehicle safely or are lacking in their task.Drowsiness detection systems are designed to detect signs of fatigue or sleepiness in drivers while they are operating a vehicle. These systems typically use cameras, sensors, or wearable devices to monitor the driver's eye movements, head position, and facial expressions. Some drowsiness detection systems also use data from other sources, such as the vehicle's onboard systems, to detect changes in driving patterns that may indicate drowsiness. When drowsiness is detected, the system may provide an alert to the person to encourage them to take a break and rest.
+
+Details about the Repository:
+1. In this project we have used Keras with Tensorflow as backend for predicting about whether eyes are closed or open, openCV-python for detecting eyes,pygame for ringing alarm and numpy and matplotlib for plotting and visualizing data.
+2. We have included the dataset that we have created for training our model. We have three folders training images,validation images and test images in data folder. In each of three folders we have two folder closed and open which is used as label for our dataset. Our actual data resides in this open and closed folders.The test images folder conatains the real eye images of the person,whereas training and validation images are taken from MRL Eye Dataset, the large-scale dataset of human eye images.
+3. In models folder, we have trained.h5 file which is our weight file for model. It is loaded into our main file for prediction of closed or open eyes.
+4. We have 'model.ipynb' notebook file which contains code for our model creation , training and testing. It also contain code for data creation and data visualization. It captures frames and detect left and right using haar xml files, then save it to specified location. More details are written inside the file.
+5. Then we have 'test.py' file which is our main file. It contains code for the user interface and when to run alarm file and predicting about whether driver is drowsy or not.
+6. In the static folder,inside the css folder we have 'home.css' and in templates folder the 'home.html file of the interface is present.
+7. alarm.wav file has the sound for buzzing the alarm.
+8. In the haarcascade folder the 3 haarcascade xml files are mentioned for frontalface,left and right eyes.
+
+Deployment using Flask:
+![Screenshot (272)](https://user-images.githubusercontent.com/83072866/233775099-433588f8-cb94-4fac-b851-b9b46d3ef508.png)
+![Screenshot (273)](https://user-images.githubusercontent.com/83072866/233775112-194a60e0-69c8-42c0-a320-dd89695125da.png)
+![Screenshot (274)](https://user-images.githubusercontent.com/83072866/233775114-e1e6b3b1-aa8d-4657-bd21-886c1fbb1efb.png)
